@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <form action="intervension.php" method="post" autocomplete="off">
+        <h2>DATOS DE LA INTERVENCIÓN</h2>
+
+        <div class="input-group">
+
+            <div class="input-container">
+                <input type="date" name="fecha" placeholder="FECHA" required>
+            </div>
+        
+            <div class="input-container">
+                <input type="time" name="hora" placeholder="HORA">
+            </div>
+        
+            <div class="input-container">
+                <input type="text" name="lugar" placeholder="LUGAR">
+            </div>
+        
+            <div class="input-container">
+                <input type="text" name="motivo" placeholder="MOTIVO">
+            </div>
+
+            <div class="input-container">
+                <input type="text" name="persona_id" placeholder="PERSONA">
+            </div>
+            
+            <div class="input-container">
+                <input type="text" name="policia_id" placeholder="POLICIA">
+            </div>
+
+            <div class="input-container">
+                <input type="text" name="vehiculo_id" placeholder="VEHICULO">
+            </div>
+        
+            <input type="submit" name="send" class="btn" value="Enviar">
+        
+        </div>
+    </form>
+
+</body>
+</html>

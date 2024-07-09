@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehiculo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="vehiculo.php" method="post" autocomplete="off">
+        <h2>DATOS DEL VEHICULO</h2>
+
+        <div class="input-group">
+
+            <div class="input-container">
+                <input type="number" name="placa" placeholder="PLACA">
+            </div>
+        
+            <div class="input-container">
+                <input type="text" name="modelo" placeholder="MODELO">
+            </div>
+        
+            <div class="input-container">
+                <input type="date" name="año" placeholder="AÑO">
+            </div>
+            
+            <div class="input-container">
+                <input type="text" name="color" placeholder="COLOR">
+            </div>
+
+            <div class="transmision">
+                <label for="transmision">transmision:</label>
+                <br>
+                <br>
+                <label for="automatico">Automático</label><br>
+                <input type="radio" id="automatico" name="transmision" value="automatico" required>
+                <label for="estandar">Estándar</label>
+                <input type="radio" id="estandar" name="transmision" value="estandar">
+            </div>
+
+            <div class="input-container">
+                <input type="number" name="vehiculo_id" placeholder="VEHICULO_ID">
+            </div>
+        
+            <input type="submit" name="send" class="btn" value="Enviar">
+        
+        </div>
+    </form>
+
+</body>
+</html>
